@@ -1,0 +1,12 @@
+{% extends 'theapp/base.html' %}
+{% load staticfiles %}
+{% block body %}
+	<div class="container">
+		<div class="row">
+            <h3>{{ user.user.username }} </h3>
+            <h3>{{ user.user.email }} </h3>
+            <h3>{{ user.contact }} </h3>
+            <h3>{{ user.address }} </h3>
+        </div><br>
+    </div>
+{% endblock %}

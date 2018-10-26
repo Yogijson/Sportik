@@ -1,0 +1,100 @@
+body{
+	background:  #e6ffff; 
+}
+
+.navbar{
+	border-radius: 0;
+	background-color:  #3973ac;
+}
+
+.navbar-brand{
+	font-family: 'Pacifico', cursive;
+	color:  #00e6ac;
+}
+
+.navbar-nav{
+	font-family: 'Abel', cursive;
+	font-size: 20px;
+	background-color: #00e6ac;
+}
+
+.logo{
+	margin: 7px 7px 7px 7px;
+}
+
+img{
+	height: 300px;
+	max-width: 350px;
+    border-radius: 3px;
+    border-image: 5px;
+    border-color: #1a1a00;
+    margin: 5px 0px 5px 0px;
+}
+
+.card {
+    box-shadow: 4px 6px 8px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffcc;
+    border-radius: 4px;
+    border-width: 5px;
+    border-color:  #1a1a00;
+    max-width: 350px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    padding: 7px 7px 7px 7px;
+}
+
+.card-item{
+	box-shadow: 4px 6px 8px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffcc;
+    border-radius: 4px;
+    border-width: 5px;
+    border-color:  #1a1a00;
+    max-width: 600px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    padding: 7px 7px 7px 7px;
+}
+
+.card-block{
+	vertical-align: middle;
+	margin: 30px 15px 7px 7px;
+	padding: 7px 7px 7px 7px;
+}
+.card-img{
+	height: 300px;
+	width: 400px;
+}
+
+.header{
+	color: #00b8e6;
+}
+
+.card-body{
+	font-family: 'Lobster';
+	font-size: 20px;
+	color: #cc6600;
+}
+
+.item-name{
+	font-family: 'Abel', cursive;
+	font-size: 40px;
+	color: #ff4000;
+}
+
+.item-price{
+	font-family: 'Abel', cursive;
+	font-size: 30px;
+	color: #ff5050;
+}
+
+.login-box{
+    width:350px;
+    height:400px;
+    background:#004080;
+    color:#4dff4d;
+    top:50%;
+    left:40%;
+    position:absolute;
+    box-sizing:border-box;
+    padding:30px 40px;
+}

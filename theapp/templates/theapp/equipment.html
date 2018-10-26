@@ -1,0 +1,47 @@
+{% extends 'theapp/base.html' %}
+{% block title %}Equipments{% endblock %}
+
+{% block body %}
+	<h1 class="header">{{ sport.sport_name }}</h1>
+	<img class="logo" src="{{ sport.sport_logo.url }}">
+
+
+	<!--<div class="row">
+		<div class="card-deck-wrapper">
+        	<div class="card-deck">
+				{% for equip in sport.equipment_set.all %}
+				<div class="col-sm-3">
+					<div class="card">
+							<img class="card-img-top img-responsive" src="{{ equip.equipment_pic.url }}">
+						<div class="card-block">
+							<h4 class="card-title text-warning">{{ equip.equipment_name }}</h4>
+							<h4 class="card-title text-warning">{{ equip.price }}</h4>
+						</div>
+						<a href="{% url 'theapp:detail' sport.id equip.id %}" class="btn btn-success">View</a>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>-->
+
+	<div class="container">
+		<div class="row">
+		{% for equip in sport.equipment_set.all %}
+		
+			<div class="col-lg-6 col-sm-4 card bg-light">
+				<img class="card-img img-responsive" src="{{ equip.equipment_pic.url }}">
+				<div class="card-block">
+					<h3 class="card-title text-secondary">{{ equip.equipment_name }}</h3>
+					<h3 class="card-title text-secondary">{{ equip.price }}</h3>
+				</div>
+				<a class="btn btn-info btn-block" role="button" href="{% url 'theapp:detail' sport.id equip.id %}">
+					<h4 class="text-success">View More</h4>
+				</a>
+			</div>
+		
+		{% endfor %}
+		</div><br>
+	</div>
+
+{% endblock %}
